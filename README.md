@@ -47,10 +47,10 @@ Click on a task to view its full details and assigned employee info
 <p align="center"><img src="src/images/tasks(admin).jpeg" width="300"/></p>
 
 **Employees**  
-<p align="center"><img src="src/images/add_employee(admin).jpeg" width="300"/></p>
+<p align="center"><img src="src/images/add_emp(admin).jpeg" width="300"/></p>
 
 **Notifications**  
-<p align="center"><img src="src/images/activity_notifications.jpeg" width="300"/></p>
+<p align="center"><img src="src/images/activty_notifications.jpeg" width="300"/></p>
 
 ---
 
