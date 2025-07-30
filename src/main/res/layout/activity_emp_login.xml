@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!-- Data binding variables can go here if needed -->
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAF9F6"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewEmpLoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="60dp" />
+
+        <!-- Email or Username -->
+        <EditText
+            android:id="@+id/editTextEmpEmailOrUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Email or Username"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/dark_grey"
+            android:background="@drawable/feild_background"
+            app:layout_constraintTop_toBottomOf="@id/textViewEmpLoginTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/editTextEmpPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/dark_grey"
+            android:background="@drawable/feild_background"
+            app:layout_constraintTop_toBottomOf="@id/editTextEmpEmailOrUsername"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/buttonEmpLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="@color/muted_beige"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/editTextEmpPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#FAF9F6">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_backarrow"
+            android:contentDescription="Back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/dark_grey" />
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Delete Task Request"
+            android:textColor="@color/dark_grey"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/back_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/back_button" />
+
+        <!-- Task Name Display -->
+        <TextView
+            android:id="@+id/task_name_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Task Name"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/task_name_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Design App UI"
+            android:textColor="@color/greenish_grey"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:background="@drawable/feild_background"
+            app:layout_constraintTop_toBottomOf="@id/task_name_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Reason to Delete -->
+        <TextView
+            android:id="@+id/reason_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Reason to Delete"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/task_name_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/delete_reason_input"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:hint="Enter reason here"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/feild_background"
+            android:padding="12dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/reason_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Send Request Button -->
+        <Button
+            android:id="@+id/send_request_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Send Request"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="@color/muted_beige"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

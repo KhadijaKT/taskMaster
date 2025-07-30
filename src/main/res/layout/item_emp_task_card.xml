@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!-- Optional ViewModel or task binding -->
+        <!--
+        <variable
+            name="task"
+            type="com.example.taskmaster.Task" />
+        -->
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/white">
+
+            <!-- Task Name -->
+            <TextView
+                android:id="@+id/task_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Task Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#22252B"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Task Details -->
+            <TextView
+                android:id="@+id/task_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Brief task details or description goes here..."
+                android:textSize="14sp"
+                android:textColor="#555555"
+                app:layout_constraintTop_toBottomOf="@id/task_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Assigned By -->
+            <TextView
+                android:id="@+id/task_assigned_by"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Assigned by: Jane Smith"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                app:layout_constraintTop_toBottomOf="@id/task_details"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Task Status Checkbox -->
+            <CheckBox
+                android:id="@+id/task_status_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Mark as Completed"
+                android:textColor="#22252B"
+                android:buttonTint="#B09F95"
+                app:layout_constraintTop_toBottomOf="@id/task_assigned_by"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Request Delete Button -->
+            <Button
+                android:id="@+id/request_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Request Delete"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#A39887"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                app:layout_constraintTop_toBottomOf="@id/task_status_checkbox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

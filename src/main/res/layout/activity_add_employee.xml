@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Optional: bind ViewModel here -->
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        android:padding="16dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_backarrow"
+            android:contentDescription="Back"
+            app:tint="@color/dark_grey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add New Employee"
+            android:textColor="@color/dark_grey"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/back_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/back_button"/>
+
+        <!-- Form Fields -->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@id/title_text"
+            app:layout_constraintBottom_toTopOf="@id/add_employee_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Name -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Name"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/emp_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter employee name"
+                    android:textSize="16sp"
+                    android:padding="12dp"
+                    android:background="@drawable/feild_background"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Email -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Email"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/emp_email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16sp"
+                    android:padding="12dp"
+                    android:background="@drawable/feild_background"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Password -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/emp_password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter password"
+                    android:inputType="textPassword"
+                    android:textSize="16sp"
+                    android:padding="12dp"
+                    android:background="@drawable/feild_background"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- Add Employee Button -->
+        <Button
+            android:id="@+id/add_employee_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="@color/greenish_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
