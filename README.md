@@ -8,11 +8,11 @@
 
 ### 🔹 Splash Screen  
 The app launches with a branded splash screen.  
-![Splash Screen](src/images/splash.jpeg)
+<p align="center"><img src="src/images/splash.jpeg" width="300"/></p>
 
 ### 🔹 First Screen  
 Users are taken to a screen where they can choose to log in as **Admin** or **Employee**.  
-![First Screen](src/images/firstScreen.jpeg)
+<p align="center"><img src="src/images/firstScreen.jpeg" width="300"/></p>
 
 ---
 
@@ -20,11 +20,11 @@ Users are taken to a screen where they can choose to log in as **Admin** or **Em
 
 ### 🔸 Admin Login  
 Admins can securely log in to access their dashboard and task control panel.  
-![Admin Login](src/images/admin_login.jpeg)
+<p align="center"><img src="src/images/admin_login.jpeg" width="300"/></p>
 
 ### 🔸 Employee Login  
 Employees log in to view and manage their assigned tasks.  
-![Employee Login](src/images/emp_login.jpeg)
+<p align="center"><img src="src/images/emp_login.jpeg" width="300"/></p>
 
 ---
 
@@ -32,61 +32,57 @@ Employees log in to view and manage their assigned tasks.
 
 ### 👨‍💼 Admin Side
 
-- Assign new tasks to employees
-- Delete existing tasks
-- Add/register new employees
-- View the status of all tasks
+- Assign new tasks to employees  
+- Delete existing tasks  
+- Add/register new employees  
+- View the status of all tasks  
 
 #### Admin Screens:
 
-1. **Dashboard**
-   - Overview of tasks and employees  
-   ![Admin Dashboard](src/images/dashboard_admin.jpeg)
+**Dashboard**  
+<p align="center"><img src="src/images/dashboard_admin.jpeg" width="300"/></p>
 
-2. **Tasks**
-   - Click on a task to view its full details and assigned employee info  
-   ![Admin Task List](src/images/tasks(admin).jpeg)  
+**Tasks**  
+Click on a task to view its full details and assigned employee info  
+<p align="center"><img src="src/images/tasks(admin).jpeg" width="300"/></p>
 
-3. **Employees**
-   - View list of registered employees  
-   ![Admin Employee List](src/images/add_employee(admin).jpeg)
+**Employees**  
+<p align="center"><img src="src/images/add_employee(admin).jpeg" width="300"/></p>
 
-4. **Notifications**
-   - View all task-related notifications  
-   ![Admin Notifications](src/images/activity_notifications.jpeg)
+**Notifications**  
+<p align="center"><img src="src/images/activity_notifications.jpeg" width="300"/></p>
 
 ---
 
 ### 👩‍💼 Employee Side
 
-- View tasks assigned by the admin
-- Update the status of tasks (e.g., In Progress, Completed)
-- Send delete requests for specific tasks
+- View tasks assigned by the admin  
+- Update the status of tasks (e.g., In Progress, Completed)  
+- Send delete requests for specific tasks  
 
 #### Employee Screens:
 
-1. **Dashboard**
-   - Overview of assigned tasks  
-   ![Employee Dashboard](src/images/dashboard_emp.jpeg)
+**Dashboard**  
+<p align="center"><img src="src/images/dashboard_emp.jpeg" width="300"/></p>
 
-2. **Tasks**
-   - View task details, status, and delete request option  
-   ![Employee Task List](src/images/emp_tasks.jpeg)  
-   ![Employee Task Details](src/images/tasks(emp_side).jpeg)
+**Tasks**  
+View task details, status, and delete request option  
+<p align="center"><img src="src/images/emp_tasks.jpeg" width="300"/></p>  
+<p align="center"><img src="src/images/tasks(emp_side).jpeg" width="300"/></p>
 
-3. **Request Delete Task**
-   - Allows employees to submit a reason for requesting task deletion  
-   ![Request Delete Task](src/images/deletetas(emp_side).jpeg)
+**Request Delete Task**  
+Allows employees to submit a reason for requesting task deletion  
+<p align="center"><img src="src/images/deletetas(emp_side).jpeg" width="300"/></p>
 
-4. **Profile**
-   - View and manage employee profile  
-   *(Add image if available)*
+**Profile**  
+View and manage employee profile  
+*(Add image if available)*
 
 ---
 
 ## 🚀 Tech Stack
 
-- Kotlin
+- Kotlin  
 - XML  
 - Firebase Authentication  
 - Firebase Realtime Database  
